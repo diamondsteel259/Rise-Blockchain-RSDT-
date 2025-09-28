@@ -1,0 +1,30 @@
+name: Compile Wallets and Binaries
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential cmake libboost-all-dev libssl-dev
+        
+    - name: Compile blockchain
+      run: |
+        mkdir -p build && cd build
+        cmake .. && make -j4
+        
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: blockchain-binaries
+        path: build/bin/
