@@ -1,0 +1,83 @@
+name: Build Release
+
+on:
+  push:
+    branches: [ master, audit-fixes/build-readme-ci ]
+  pull_request:
+    branches: [ master, audit-fixes/build-readme-ci ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          build-essential \
+          cmake \
+          git \
+          pkg-config \
+          libboost-all-dev \
+          libssl-dev \
+          libzmq3-dev \
+          libunbound-dev \
+          libsodium-dev \
+          libunwind8-dev \
+          liblzma-dev \
+          libreadline6-dev \
+          libldns-dev \
+          libexpat1-dev \
+          libgtest-dev \
+          doxygen \
+          graphviz
+          
+    - name: Configure build
+      run: |
+        mkdir -p build
+        cd build
+        cmake -DCMAKE_BUILD_TYPE=Release ..
+        
+    - name: Build
+      run: |
+        cd build
+        make -j$(nproc)
+        
+    - name: Build tests (if available)
+      run: |
+        cd build
+        if [ -n "$(cmake -L .. | grep BUILD_TESTS)" ]; then
+          echo "BUILD_TESTS option found, building tests"
+          cmake -DBUILD_TESTS=ON ..
+          make -j$(nproc)
+        else
+          echo "BUILD_TESTS option not available, skipping tests build"
+        fi
+      continue-on-error: true
+        
+    - name: Run tests (if built)
+      run: |
+        cd build
+        if [ -x "$(command -v ctest)" ] && [ -f "CTestTestfile.cmake" ]; then
+          echo "Running tests"
+          ctest --output-on-failure
+        else
+          echo "Tests not available, skipping"
+        fi
+      continue-on-error: true
+        
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: rsdt-build-artifacts
+        path: |
+          build/bin/
+          build/lib/
+        retention-days: 30
+      if: always()
