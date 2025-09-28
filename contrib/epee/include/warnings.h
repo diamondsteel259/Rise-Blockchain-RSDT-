@@ -4,7 +4,7 @@
 
 #define PUSH_WARNINGS __pragma(warning(push))
 #define POP_WARNINGS __pragma(warning(pop))
-#define DISABLE_VS_WARNINGS(w) __pragma(warning(disable: w))
+#define DISABLE_VS_WARNINGS(w) __pragma(warning(disable : w))
 #define DISABLE_GCC_WARNING(w)
 #define DISABLE_CLANG_WARNING(w)
 #define DISABLE_GCC_AND_CLANG_WARNING(w)
@@ -25,6 +25,7 @@
 #define DISABLE_CLANG_WARNING(w)
 #endif
 
-#define DISABLE_GCC_AND_CLANG_WARNING(w) _Pragma(BOOST_PP_STRINGIZE(GCC diagnostic ignored BOOST_PP_STRINGIZE(-W##w)))
+#define DISABLE_GCC_AND_CLANG_WARNING(w)                                       \
+  _Pragma(BOOST_PP_STRINGIZE(GCC diagnostic ignored BOOST_PP_STRINGIZE(-W##w)))
 
 #endif
