@@ -50,6 +50,9 @@
 #define BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW               60
 
 // MONEY_SUPPLY - total number coins to be generated
+// NOTE: Current value represents 200,000 RSDT due to uint64_t atomic unit limitations
+// Target: 200,000,000 RSDT total supply (requires uint128_t for atomic calculations)
+// TODO: Upgrade to larger integer type to support full 200M RSDT supply
 #define MONEY_SUPPLY                                    ((uint64_t)(200000000000000000ULL))
 #define EMISSION_SPEED_FACTOR_PER_MINUTE                (20)
 #define FINAL_SUBSIDY_PER_MINUTE                        ((uint64_t)300000000000) // 3 * pow(10, 11)
@@ -228,7 +231,16 @@ namespace config
   boost::uuids::uuid const NETWORK_ID = { {
       0x12 ,0x30, 0xF1, 0x71 , 0x61, 0x04 , 0x41, 0x61, 0x17, 0x31, 0x00, 0x82, 0x16, 0xA1, 0xA1, 0x10
     } }; // Bender's nightmare
-  std::string const GENESIS_TX = "013c01ff0001ffffffffffff0302df5d56da0c7d643ddd1ce61901c7bdc5fb1738bfe39fbe69c28a3a7032729c0f2101168d0c4ca86fb55a4cf6a36d31431be1c53a3bd7411bb24e8832410289fa6f3b";
+  
+  // PLACEHOLDER: Replace with final genesis TX hex after offline generation
+  // Instructions:
+  // 1. Generate genesis block offline using air-gapped system
+  // 2. Use create_genesis_with_premine.py or equivalent secure generator
+  // 3. Verify premine allocation: 20,000,000 RSDT (10% of 200M total supply)
+  // 4. Replace placeholder below with generated hex
+  // 5. Test genesis block validation before deployment
+  // WARNING: Never commit private keys to this repository!
+  std::string const GENESIS_TX = "PLACEHOLDER_GENESIS_TX_HEX_REPLACE_BEFORE_MAINNET_LAUNCH";
   uint32_t const GENESIS_NONCE = 10000;
 
   // Hash domain separators

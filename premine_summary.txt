@@ -1,0 +1,52 @@
+RSDT Blockchain - Premine Summary (Public Information Only)
+===========================================================
+
+Total Premine: 20,000,000 RSDT (10% of 200M total supply)
+Genesis Coinbase: 50 RSDT
+Total Genesis Supply: 20,000,050 RSDT
+
+Premine Allocation Breakdown:
+============================
+
+1. RSDT_Liquidity_1: 4,500,000 RSDT (22.5%)
+   - Purpose: Exchange liquidity and market making
+   - Vesting: 50% at T1 listing, 50% at $10M market cap
+
+2. RSDT_Development_1: 3,750,000 RSDT (18.75%)
+   - Purpose: Core development, maintenance, and upgrades
+   - Vesting: 24-month linear release
+
+3. RSDT_Marketing_1: 3,000,000 RSDT (15%)
+   - Purpose: Marketing campaigns, partnerships, community growth
+   - Vesting: 12-month linear release
+
+4. RSDT_Team_1: 2,250,000 RSDT (11.25%)
+   - Purpose: Core team compensation and incentives
+   - Vesting: Custom vesting schedule
+
+5. RSDT_Treasury_1: 1,500,000 RSDT (7.5%)
+   - Purpose: DAO treasury and governance
+   - Vesting: Available to DAO after 6 months
+
+6. RSDT_OTC_Sales: 2,750,000 RSDT (13.75%)
+   - Purpose: Over-the-counter sales for early funding
+   - Vesting: 18-month linear release
+
+7. RSDT_Founder_Private: 2,250,000 RSDT (11.25%)
+   - Purpose: Founder allocation
+   - Vesting: 50% at launch, 25% at 12 months, 25% at first halving
+
+Genesis Message: "Censorship is control; privacy is resistance"
+Genesis Date: 2026-01-01T00:00:00Z
+
+Security Notes:
+==============
+- This document contains only public allocation information
+- No private keys or sensitive cryptographic material included
+- Official addresses will be generated offline using air-gapped systems
+- All private keys are stored securely offline and never committed to repositories
+
+Verification:
+============
+Total allocation: 20,000,000 RSDT = 10% of maximum supply (200,000,000 RSDT)
+Remaining minable supply: 180,000,000 RSDT = 90% of maximum supply

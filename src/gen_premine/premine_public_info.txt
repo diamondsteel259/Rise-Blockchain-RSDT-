@@ -1,0 +1,65 @@
+RSDT Premine Public Information (No Private Keys)
+==================================================
+
+Generated: 1759080646
+Genesis Message: "Censorship is control; privacy is resistance"
+Genesis Date: 2026-01-01T00:00:00Z
+
+Wallet: RSDT_Liquidity_1
+Amount: 4500000 RSDT
+Amount (atomic): 4500000000000000000
+Purpose: Exchange liquidity and market making
+Vesting: 50% T1 listing, 50% @ $10M cap
+
+Wallet: RSDT_Development_1
+Amount: 3750000 RSDT
+Amount (atomic): 3750000000000000000
+Purpose: Core development and maintenance
+Vesting: 24-mo linear
+
+Wallet: RSDT_Marketing_1
+Amount: 3000000 RSDT
+Amount (atomic): 3000000000000000000
+Purpose: Marketing and community growth
+Vesting: 12-mo linear
+
+Wallet: RSDT_Team_1
+Amount: 2250000 RSDT
+Amount (atomic): 2250000000000000000
+Purpose: Core team compensation
+Vesting: Custom vesting
+
+Wallet: RSDT_Treasury_1
+Amount: 1500000 RSDT
+Amount (atomic): 1500000000000000000
+Purpose: DAO treasury and governance
+Vesting: DAO after 6 months
+
+Wallet: RSDT_OTC_Sales
+Amount: 2750000 RSDT
+Amount (atomic): 2750000000000000000
+Purpose: Over-the-counter sales
+Vesting: 18-mo linear
+
+Wallet: RSDT_Founder_Private
+Amount: 2250000 RSDT
+Amount (atomic): 2250000000000000000
+Purpose: Founder allocation
+Vesting: 50% launch, 25% @ 12mo, 25% @ halving
+
+Total Premine: 20000000 RSDT
+Total Premine (atomic): [OVERFLOW - use individual amounts]
+Percentage of total supply: 10%
+
+IMPORTANT NOTE:
+===============
+The total premine amount in atomic units exceeds uint64_t limits.
+Individual wallet amounts are calculated correctly.
+For genesis block creation, use individual amounts or upgrade to uint128_t.
+
+SECURITY NOTICE:
+================
+This file contains only public allocation information.
+No private keys, addresses, or sensitive cryptographic material included.
+Official addresses must be generated offline using air-gapped systems.
+Private keys should never be stored in version control systems.

@@ -1,0 +1,8 @@
+wallet_name,amount_rsdt,amount_atomic,vesting_schedule,purpose
+RSDT_Liquidity_1,4500000,4500000000000000000,"50% T1 listing, 50% @ $10M cap","Exchange liquidity and market making"
+RSDT_Development_1,3750000,3750000000000000000,"24-mo linear","Core development and maintenance"
+RSDT_Marketing_1,3000000,3000000000000000000,"12-mo linear","Marketing and community growth"
+RSDT_Team_1,2250000,2250000000000000000,"Custom vesting","Core team compensation"
+RSDT_Treasury_1,1500000,1500000000000000000,"DAO after 6 months","DAO treasury and governance"
+RSDT_OTC_Sales,2750000,2750000000000000000,"18-mo linear","Over-the-counter sales"
+RSDT_Founder_Private,2250000,2250000000000000000,"50% launch, 25% @ 12mo, 25% @ halving","Founder allocation"

@@ -3,20 +3,21 @@
 Create RSDT Genesis Block with Premine
 This script creates a proper genesis block that includes:
 1. Coinbase transaction (50 RSDT)
-2. Premine transactions (15M RSDT total)
+2. Premine transactions (20M RSDT total)
 """
 
 import struct
 import hashlib
 
-# RSDT Premine Allocation (from Bible)
+# RSDT Premine Allocation (20M RSDT total - 10% of 200M supply)
 PREMINE_ALLOCATION = {
     "RSDT_Liquidity_1": 4500000,      # 4.5M RSDT
     "RSDT_Development_1": 3750000,    # 3.75M RSDT  
     "RSDT_Marketing_1": 3000000,      # 3M RSDT
     "RSDT_Team_1": 2250000,           # 2.25M RSDT
     "RSDT_Treasury_1": 1500000,       # 1.5M RSDT
-    "RSDT_Founder_Private": 2250000    # 2.25M RSDT
+    "RSDT_OTC_Sales": 2750000,        # 2.75M RSDT
+    "RSDT_Founder_Private": 2250000   # 2.25M RSDT
 }
 
 # Convert to atomic units (1 RSDT = 10^12 atomic units)
