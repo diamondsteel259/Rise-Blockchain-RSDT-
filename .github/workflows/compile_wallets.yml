@@ -11,8 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
-      
+      uses: actions/checkout@v4      with:
+        submodules: recursive
+        
     - name: Install dependencies
       run: |
         sudo apt-get update
@@ -20,8 +21,11 @@ jobs:
         
     - name: Compile blockchain
       run: |
-        mkdir -p build && cd build
-        cmake .. && make -j4
+        # Initialize and update submodules
+        git submodule update --init --recursive --force
+        
+        # Create build directory and compile
+        mkdir -p build && cd build        cmake .. -DMANUAL_SUBMODULES=1 && make -j4
         
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
