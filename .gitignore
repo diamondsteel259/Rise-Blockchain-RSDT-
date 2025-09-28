@@ -48,6 +48,13 @@ log/
 *.tmp
 *.temp
 *.swp
+
+# Debug and test executables (gen_premine directory)
+src/gen_premine/gen_premine
+src/gen_premine/calc
+src/gen_premine/debug
+src/gen_premine/test_overflow
+src/gen_premine/*.out
 *.swo
 *~
 .DS_Store
