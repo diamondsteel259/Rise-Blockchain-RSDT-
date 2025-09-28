@@ -22,16 +22,19 @@ jobs:
       run: |
         mkdir -p build && cd build
         
-        # Compile core blockchain files directly
+        # Compile core blockchain files with correct paths
         g++ -std=c++17 -O2 -static -Wall -Werror \
           -I../include \
-          ../src/*.cpp \
+          $(find ../src/ -name "*.cpp" | head -20) \
           -lboost_system -lboost_filesystem -lboost_thread -lssl -lcrypto \
           -lzmq -lhidapi -lreadline \
           -o rsdt-blockchain
+        
+        # Create bin directory for artifacts
+        mkdir -p bin
         
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
         name: blockchain-binaries
-        path: build/
+        path: build/bin/
