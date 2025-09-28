@@ -26,10 +26,15 @@ RSDT (Resistance) is a privacy-focused cryptocurrency built on the Monero blockc
 sudo apt update
 sudo apt install build-essential cmake git pkg-config libboost-all-dev libssl-dev libzmq3-dev libunbound-dev libsodium-dev libunwind8-dev liblzma-dev libreadline6-dev libldns-dev libexpat1-dev libgtest-dev doxygen graphviz
 
-# Build
+# Build (Debug)
 mkdir build && cd build
 cmake ..
-make -j4
+make -j$(nproc)
+
+# Build (Release - recommended for production)
+mkdir build && cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+make -j$(nproc)
 
 # Run daemon
 ./bin/rsdtd
@@ -38,13 +43,26 @@ make -j4
 ## 📚 Documentation
 
 - [Whitepaper](RESISTANCE_BLOCKCHAIN_WHITEPAPER.pdf)
-- [Tokenomics](RSDT_TOKENOMICS_PROFESSIONAL.pdf)
+- [Tokenomics](RSDT_TOKENOMICS_PROFESSIONAL.pdf)  
 - [Deployment Guide](RSDT_DEPLOYMENT_BIBLE_UPDATED.pdf)
 - [Blockchain Overview](RSDT_BLOCKCHAIN_OVERVIEW.pdf)
+- [Release Checklist](RELEASE_CHECKLIST.md)
+
+## 🧪 Testing
+
+### Manual Smoke Tests
+```bash
+# After building, run basic smoke tests
+./utils/ci/smoke_test.sh ./build/bin/rsdtd
+```
+
+**Note:** Smoke tests are provided for manual validation and do not run automatically in CI.
 
 ## ⚠️ Disclaimer
 
 This is experimental software. Use at your own risk.
+
+**🔒 SECURITY WARNING**: This repository contains sensitive premine wallet information. Any changes to genesis parameters, premine allocations, or consensus rules require explicit approval and security review. See [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md) for details.
 
 ## 📄 License
 

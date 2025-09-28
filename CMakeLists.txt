@@ -1213,6 +1213,22 @@ if(PROTOKIT_LIBRARY)
   set(ZMQ_LIB "${ZMQ_LIB};${PROTOKIT_LIBRARY}")
 endif()
 
+# Set output directories for binaries and libraries
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+
+# Helpful warning if src/ folder is missing or no .cpp files are found
+if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/src")
+  message(WARNING "src/ directory not found. Build may fail.")
+else()
+  file(GLOB_RECURSE CPP_FILES "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
+  list(LENGTH CPP_FILES CPP_COUNT)
+  if(CPP_COUNT EQUAL 0)
+    message(WARNING "No .cpp files found in src/ directory. Build may fail.")
+  endif()
+endif()
+
 include(external/supercop/functions.cmake) # place after setting flags and before src directory inclusion
 add_subdirectory(contrib)
 add_subdirectory(src)
