@@ -24,7 +24,7 @@ jobs:
         cmake .. && make -j4
         
     - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: blockchain-binaries
         path: build/bin/
