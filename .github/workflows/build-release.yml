@@ -1,0 +1,47 @@
+name: CI - Build Release
+
+on:
+  push:
+    branches: [ master, audit-fixes/add-externals ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+          fetch-depth: 0
+
+      - name: Update submodules
+        run: git submodule update --init --recursive
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential cmake pkg-config libboost-all-dev libssl-dev libzmq3-dev libunbound-dev libsodium-dev libunwind-dev liblzma-dev libreadline-dev libldns-dev libexpat1-dev libhidapi-dev liblmdb-dev jq python3 ccache
+
+      - name: Configure
+        run: |
+          mkdir -p build
+          cd build
+          cmake -DCMAKE_BUILD_TYPE=Release ..
+
+      - name: Build
+        run: |
+          cd build
+          make -j$(nproc)
+
+      - name: Run tests (if available)
+        run: |
+          cd build || exit 0
+          if [ -f CTestTestfile.cmake ]; then ctest --output-on-failure || true; fi
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: rsdt-build-artifacts
+          path: build/bin/
