@@ -1,4 +1,4 @@
-name: Compile Wallets and Binaries
+name: Compile Blockchain
 
 on:
   push:
@@ -12,32 +12,26 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-      with:
-        submodules: false  # Skip submodules to avoid issues
-        
+      
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y build-essential cmake libboost-all-dev libssl-dev libzmq5-dev libhidapi-dev libreadline-dev ccache
+        sudo apt-get install -y build-essential cmake libboost-all-dev libssl-dev libzmq5-dev libhidapi-dev libreadline-dev
         
-    - name: Set up ccache
+    - name: Direct compilation
       run: |
-        ln -s /usr/bin/ccache /usr/local/bin/gcc
-        ln -s /usr/bin/ccache /usr/local/bin/g++
-        
-    - name: Compile blockchain
-      run: |
-        # Create build directory and compile with simplified flags
         mkdir -p build && cd build
         
-        # Copy missing files or create workarounds
-        echo "#include <iostream>" > ../src/version.h
-        
-        # Run CMake with workarounds
-        cmake .. -DMANUAL_SUBMODULES=1 -DCCACHE=ON -DCMAKE_SKIP_RPATH=ON -DBUILD_TAG="github-actions" && make -j4
+        # Compile core blockchain files directly
+        g++ -std=c++17 -O2 -static -Wall -Werror \
+          -I../include \
+          ../src/*.cpp \
+          -lboost_system -lboost_filesystem -lboost_thread -lssl -lcrypto \
+          -lzmq -lhidapi -lreadline \
+          -o rsdt-blockchain
         
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
         name: blockchain-binaries
-        path: build/bin/
+        path: build/
