@@ -1,0 +1,18 @@
+RSDT Premine public summary - no private keys
+============================================
+
+Total premine: 20,000,000 RSDT
+
+Allocation:
+- RSDT_Liquidity_1: 4,500,000 RSDT
+- RSDT_Development_1: 3,750,000 RSDT
+- RSDT_Marketing_1: 3,000,000 RSDT
+- RSDT_Team_1: 2,250,000 RSDT
+- RSDT_Treasury_1: 1,500,000 RSDT
+- RSDT_OTC_Sales: 2,750,000 RSDT
+- RSDT_Founder_Private: 2,250,000 RSDT
+
+Notes:
+- This file is intentionally public-only and contains no private keys.
+- Private keys for premine addresses MUST be generated offline, stored securely (hardware wallet/cold storage), and never committed.
+- The repository will store only public addresses and allocation amounts for transparency.
