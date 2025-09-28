@@ -1,0 +1,47 @@
+RESISTANCE BLOCKCHAIN - PREMINE VESTING SCHEDULE
+================================================
+
+Total Premine: 17.25M RSDT distributed to 6 founders
+
+FOUNDER 1 (You): 2.875M RSDT (16.67%)
+- Already Vested: 1.4375M RSDT (50%) - IMMEDIATELY AVAILABLE
+- Locked: 1.4375M RSDT (50%) - 1 year vesting period
+
+FOUNDER 2: 2.875M RSDT (16.67%)
+- Vested: 718,750 RSDT (25%) - IMMEDIATELY AVAILABLE  
+- Locked: 2,156,250 RSDT (75%) - 1 year vesting period
+
+FOUNDER 3: 2.875M RSDT (16.67%)
+- Vested: 575,000 RSDT (20%) - IMMEDIATELY AVAILABLE
+- Locked: 2,300,000 RSDT (80%) - 2 year vesting period
+
+FOUNDER 4: 2.875M RSDT (16.67%)
+- Vested: 287,500 RSDT (10%) - IMMEDIATELY AVAILABLE
+- Locked: 2,587,500 RSDT (90%) - 3 year vesting period
+
+FOUNDER 5: 2.875M RSDT (16.67%)
+- Vested: 143,750 RSDT (5%) - IMMEDIATELY AVAILABLE
+- Locked: 2,731,250 RSDT (95%) - 4 year vesting period
+
+FOUNDER 6: 2.875M RSDT (16.67%)
+- Vested: 143,750 RSDT (5%) - IMMEDIATELY AVAILABLE
+- Locked: 2,731,250 RSDT (95%) - 5 year vesting period
+
+TOTALS:
+- Total Immediately Available: 3,450,000 RSDT (20%)
+- Total Locked: 13,800,000 RSDT (80%)
+- Total Premine: 17,250,000 RSDT (100%)
+
+VESTING RELEASE SCHEDULE:
+- Year 1: Release 100% of Founder 1 & 2 locked amounts
+- Year 2: Release Founder 3 locked amount
+- Year 3: Release Founder 4 locked amount  
+- Year 4: Release Founder 5 locked amount
+- Year 5: Release Founder 6 locked amount
+
+All vesting releases require multi-signature approval from at least 4 founders.
+
+ATOMIC UNITS CONVERSION:
+- 1 RSDT = 1,000,000,000,000 atomic units (12 decimal places)
+- Founder allocation: 2,875,000,000,000,000 atomic units each
+- Total premine: 17,250,000,000,000,000 atomic units

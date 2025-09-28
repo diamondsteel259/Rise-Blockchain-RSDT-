@@ -1,0 +1,57 @@
+# RESISTANCE BLOCKCHAIN - COMPLETE PREMINE WALLET COLLECTION
+# Total Premine: 20M RSDT (10% of 200M total supply)
+# Generated: $(date)
+
+## PUBLIC WALLETS (6 Total):
+
+### 1. RSDT_Liquidity (4.5M RSDT - 2.25%)
+Address: 47SqxBdbhB5Afm4cXMrQE3eke3ghicJXUeGh2nx3V3LkQrrE3vjJznLFkor9Hyb4EFGoop61q4bteDMAd7FMC13hSQ78JHT
+Spend Key: bf750f541dab5d18587f07d85d4a26894aca3de4ddc655dc2d03553037a86504
+View Key: 7551e20503384b256b47a2b191ece5c25bd08201c5c15c36edc894aaa771f309
+Vesting: 50% T1 listing, 50% @ $10M cap
+
+### 2. RSDT_Development (3.75M RSDT - 1.875%)
+Address: 482uYzU9pXdLDi6LrQR8NJFDThiR8JFvTh5xwAkbhmjNYPq4qTM3U8vQFom6RZ91zddQvKjngLNw5fwRntR2k4wxTveXxdJ
+Spend Key: 7918c1fa7e5572593361dca589642cd00b95745248809c1c7c512aa8a289d403
+View Key: e590a7019198f2831de6fb8cf351a12803b1190cc1113c673ba3dffd40624803
+Vesting: 24-mo linear
+
+### 3. RSDT_Marketing (3M RSDT - 1.5%)
+Address: 424EUrcR8VCJaThqNvagqwbL1hUZKeiLUaKfNiZ3ahCdP7PDozPsnm2PYBV97WAco1EKt9o1bG2964fpuBNQDY5aTX7xRhs
+Spend Key: 3c8e148a83175e2e2ba3fd0fe45372122cb16f2b99f438e763e199d72074eb0c
+View Key: 524ed377a9149c0aef1ed2a26de1e074461ef5ca5cfd5868faf1a729d858ea02
+Vesting: 12-mo linear
+
+### 4. RSDT_Team (2.25M RSDT - 1.125%)
+Address: 48Pp2yPq7icAKwK8APP2sgdTfF1tpGLiJhB2TKkbGZ5G5rrdzQKw2Qu1quV7Fk6u7ZWhuYNfzempcUYLqm1aJN75U3BAbKa
+Spend Key: 7b028a7ed79e45cd95b6c909140bfbb56c6e2c835b2ecf92a3018470434c2102
+View Key: a0d903ceae5108cd67a8fc4dd697b29de8761db11a92d6731753bc8ebd4bb303
+Vesting: Custom vesting
+
+### 5. RSDT_Treasury (1.5M RSDT - 0.75%)
+Address: 4AYi4wt22fkXZgx1cvoDEQhdZXgaRiVCFeE4XznFLucy7rTkhoHFqoDQrNWr1gnxT1AroBgVuThCv5cEdaByCxcgKYDY8SS
+Spend Key: 94c772cc1d5fbed46fe91edda2789fc22a3f55d564a93606bf34fa1c9339ba02
+View Key: 307fc9d3fc22dd2dca40f4b64c269fc984b3443275716a2ba216c4931950d70d
+Vesting: DAO after 6 months
+
+### 6. RSDT_OTC_Sales (2.75M RSDT - 1.375%)
+Spend Key: 6a72fc6c647d298428c2be1efe5216798341a375d9f7a589355bc570c7663d04
+View Key: 5d3c1cd5fc7e66be4cc93a18aea111ef00231c9d7de944528e3391b02ab641f3
+Address: [Generated from keys]
+Vesting: 18-month linear
+
+## PRIVATE WALLET (1 Total):
+
+### 7. RSDT_Founder_Private (2.25M RSDT - 1.125%) ⭐ YOUR WALLET
+Address: 44ZE4bRNz28i6acpBKV4RoAua61uGLvGkgyN8zJ9h8eeLFLEHNTVXbDjC6YKQz6jwqZS4S1XcMvRwJrm2gCoSnm3BeywEun
+Spend Key: 990f0ac7dd4bb4f2dc7ef3ec3fa8e6c2d12dff3d66744220a8e85169e69bd10e
+View Key: 47e181fa20025422fafb93d3822ca2d9536028f7f2e8b882bcdc65889363090e
+Vesting: 50% launch, 25% @ 12mo, 25% @ halving
+
+## SUMMARY:
+- Total Premine: 20M RSDT
+- Public Wallets: 6 (17.75M RSDT)
+- Private Wallet: 1 (2.25M RSDT)
+- Genesis Block: ✅ Loaded successfully
+- Daemon Status: ✅ Running on testnet
+- Blockchain Height: 1 (genesis confirmed)

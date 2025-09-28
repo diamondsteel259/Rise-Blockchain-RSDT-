@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#1a1a1a">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🛡️ RESISTANCE BLOCKCHAIN WALLET"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Wallet Information -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wallet Information"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#00ff00"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address: Not generated"
+        android:textColor="#00ffff"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:id="@+id/balanceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Balance: 0.000000 RSDT"
+        android:textColor="#ffff00"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/generateWalletBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Generate Wallet"
+            android:textColor="#00ff00"
+            android:background="#2a2a2a"
+            android:layout_marginEnd="5dp" />
+
+        <Button
+            android:id="@+id/refreshBalanceBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Refresh Balance"
+            android:textColor="#00ff00"
+            android:background="#2a2a2a"
+            android:layout_marginStart="5dp" />
+
+    </LinearLayout>
+
+    <!-- Transaction Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Transaction"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#00ff00"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/recipientEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Recipient Address"
+        android:textColor="#00ff00"
+        android:textColorHint="#666666"
+        android:background="#1a1a1a"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/amountEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount (RSDT)"
+        android:inputType="numberDecimal"
+        android:textColor="#00ff00"
+        android:textColorHint="#666666"
+        android:background="#1a1a1a"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/sendTransactionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Transaction"
+        android:textColor="#ff0000"
+        android:background="#2a2a2a" />
+
+</LinearLayout>

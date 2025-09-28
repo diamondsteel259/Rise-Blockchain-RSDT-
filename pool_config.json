@@ -1,0 +1,9 @@
+{
+  "daemon_url": "http://127.0.0.1:18081",
+  "pool_fee": 1.0,
+  "min_payout": 0.1,
+  "database": "rsdt_pool.db",
+  "pool_address": "4A64wDfoaR6Lf1CGww4KanRZXbwrzXFFfE7wjtwvtZu8gVWEyYHzgbpAPiBra5UR5HCjcEFufBMZLRcHj3BCXLfuNf9Sn4N",
+  "pool_port": 3333,
+  "api_port": 8080
+}

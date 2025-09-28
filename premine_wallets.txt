@@ -1,0 +1,55 @@
+RSDT Premine Wallet Configuration
+==================================
+
+Wallet: RSDT_Liquidity_1
+Amount: 4500000 RSDT
+Address: 423udpeRCejPXJ2sEYbK3m9a6PW74eyJQ9uGQvZM8XR9WKz1noZzT6i2HC3YSx2t7ZGvne1XdzNceVJukmryL35JPsbidxr
+Vesting: 50% T1 listing, 50% @ $10M cap
+Spend Key: f9918585208723ebec7f67700bcc2ddec9b5b5e488d593e617c7512d9d182f05
+View Key: 29f0d64333b64b266daa273733ea6eee04369b6a4433a5f1443d3c2a6d45df0f
+
+Wallet: RSDT_Development_1
+Amount: 3750000 RSDT
+Address: 45AX4kaZ5mGWQv1M2RZCs3cBL3afAJJofdfNpBpxv39eW7B9PkrxQg2LtQSMPPaS3N9StcCyHns6M4KcCqyZRnVV93xyFaW
+Vesting: 24-mo linear
+Spend Key: 8d9e40539d6c4923ac6feedb4103080bac1d329ca3ec1d313e2524d012a18200
+View Key: 29ac9059324169c33326c32f248985cc3e5ed53efc9e31be3001977e9bf6b905
+
+Wallet: RSDT_Marketing_1
+Amount: 3000000 RSDT
+Address: 43YVyNYTrCZ59ujyq4bm4mReo4zLhaUTzfxaYHVED5A7LzV3digxfhgC1WBojkuz7Ei2MJadWgQneZRerNvaPh2PTSUJfMs
+Vesting: 12-mo linear
+Spend Key: dd44e16e2f5b556b0eb5ebd118d478aac8d54572630bc03be0e8aa2c982b1c0c
+View Key: 7f8180acb338649b9d994765d76742d0e87b4179a80f3f3b1ce904285b497701
+
+Wallet: RSDT_Team_1
+Amount: 2250000 RSDT
+Address: 45b5tcjaLbf6SW7xnG1RKXTG5Rpg1D6kWGuSWuHU9NxaZi8P6a2tkgKWRUzCgXooTS3PpKsYLsMidVb5tu5yWpP4SZG11Vw
+Vesting: Custom vesting
+Spend Key: 23c109443c36fc31167adc432d9a97b2ffcf71a3b02a30d450f1304b8650e603
+View Key: b2e0920554fe05156a989db5cfee51a90dd2462556dbf0d1a86ade937579b903
+
+Wallet: RSDT_Treasury_1
+Amount: 1500000 RSDT
+Address: 4B8Eox9UK8C4CY33C2DQ8ZhevUZUTZpDXPFN1mSbhoN2HbhhW1iogjW2UCqLdf2SQN4vcH5EnDymPf6r1nH5nQmMSjDRc3x
+Vesting: DAO after 6 months
+Spend Key: a22720b17628fa93c45202068ef93967c0590f163845d56dc5bcf7dbda53480e
+View Key: 408a9bda7c0f118f82bdfa337fae34c1fcf4f57b35f8cd664682a3fdbc1e010d
+
+Wallet: RSDT_OTC_Sales
+Amount: 2750000 RSDT
+Address: 4AAJde8LEVpK7xPfXRP449bNCBJvqbc5BCctB7nNBEEgPwWWWLxetaQKzxdGssFHiWTydocHdPpR28fHxH1mYMeDJwnMhn1
+Vesting: 18-mo linear
+Spend Key: 8aa6571150157058c8b2d60a1489025cb6e2af0e021e42d26a98bc3e1787a301
+View Key: 3c12d57a6f626fbdc525058455f2bce0f865a49d2eac7232bd5b3415e1d74503
+
+Wallet: RSDT_Founder_Private
+Amount: 2250000 RSDT
+Address: 4AZqHZ6AX5TRDYR2fvDcNXgiTxbrWJ74y2T8Q5pXqSNbXgXjecuCUTSEKJ4YmYTbn3NPCehieMWQB8A8HXgwMdDF8p7Zmtx
+Vesting: 50% launch, 25% @ 12mo, 25% @ halving
+Spend Key: 299d27dcccc12d0da4fc3f70831e237c53a34a228859ea872c0e19c014707200
+View Key: 439cad2d7e8a2ffa0927ba2ddd97a558ec336c51c06bf351205da3290dd83300
+
+Total Premine: 1553255 RSDT
+Genesis Message: "Censorship is control; privacy is resistance"
+Genesis Date: 2026-01-01T00:00:00Z

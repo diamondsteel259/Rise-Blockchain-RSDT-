@@ -1,0 +1,6 @@
+RSDT_OTC_Sales Wallet:
+Amount: 2.75M RSDT
+Vesting: 18-month linear
+Spend Key: 6a72fc6c647d298428c2be1efe5216798341a375d9f7a589355bc570c7663d04
+View Key: 5d3c1cd5fc7e66be4cc93a18aea111ef00231c9d7de944528e3391b02ab641f3
+Address: [Generated from keys]

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#1a1a1a">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⛏️ RESISTANCE BLOCKCHAIN MINER"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Mining Statistics -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mining Statistics"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#00ff00"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/hashrateText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hashrate: 0.00 H/s"
+            android:textColor="#ffff00" />
+
+        <TextView
+            android:id="@+id/blocksFoundText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Blocks Found: 0"
+            android:textColor="#ffff00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/cpuUsageText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CPU Usage: 0%"
+            android:textColor="#ffff00" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stopped"
+            android:textColor="#ff0000" />
+
+    </LinearLayout>
+
+    <!-- Mining Configuration -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mining Configuration"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#00ff00"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/addressEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mining Address"
+        android:textColor="#00ff00"
+        android:textColorHint="#666666"
+        android:background="#1a1a1a"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/threadsEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Threads"
+        android:inputType="number"
+        android:textColor="#00ff00"
+        android:textColorHint="#666666"
+        android:background="#1a1a1a"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Mining Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/startMiningBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Start Mining"
+            android:textColor="#00ff00"
+            android:background="#2a2a2a"
+            android:layout_marginEnd="5dp" />
+
+        <Button
+            android:id="@+id/stopMiningBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stop Mining"
+            android:textColor="#ff0000"
+            android:background="#2a2a2a"
+            android:layout_marginStart="5dp"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+    <!-- Status -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🛡️ Privacy is Resistance!"
+        android:textSize="14sp"
+        android:textColor="#00ff00"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistance Blockchain Whitepaper</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #2c3e50;
+            margin-top: 25px;
+        }
+        .abstract {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 15px 0;
+        }
+        .code {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            border: 1px solid #dee2e6;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+        @media print {
+            body { background-color: white; }
+            .container { box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RESISTANCE BLOCKCHAIN WHITEPAPER</h1>
+        <p style="text-align: center; color: #7f8c8d; font-size: 1.1em;">Privacy-First Cryptocurrency Fork of Monero</p>
+        
+        <div class="abstract">
+            <strong>ABSTRACT:</strong> Resistance Blockchain (RSDT) is a privacy-focused cryptocurrency fork of Monero v0.18.3.1, designed to combat censorship and promote financial privacy. Built on the principle "Censorship is control; privacy is resistance," RSDT implements enhanced privacy features, fee burning mechanisms, and a carefully structured premine allocation.
+        </div>
+
+        <h2>1. INTRODUCTION</h2>
+        
+        <h3>1.1 Mission Statement</h3>
+        <p>In an era of increasing financial surveillance and censorship, Resistance Blockchain provides a decentralized, private, and censorship-resistant monetary system. Our mission is to create a cryptocurrency that prioritizes user privacy while maintaining transparency in governance and token distribution.</p>
+        
+        <h3>1.2 Core Principles</h3>
+        <ul>
+            <li><strong>Privacy First:</strong> Enhanced privacy through ZK-proofs and encrypted mempool</li>
+            <li><strong>Censorship Resistance:</strong> Decentralized network resistant to external control</li>
+            <li><strong>Transparent Governance:</strong> Clear premine allocation and vesting schedules</li>
+            <li><strong>Sustainable Economics:</strong> Fee burning and controlled inflation</li>
+        </ul>
+
+        <h2>2. TECHNICAL SPECIFICATIONS</h2>
+        
+        <h3>2.1 Blockchain Parameters</h3>
+        <table>
+            <tr><th>Parameter</th><th>Value</th></tr>
+            <tr><td>Ticker</td><td>RSDT</td></tr>
+            <tr><td>Total Supply</td><td>200M RSDT</td></tr>
+            <tr><td>Premine</td><td>20M RSDT (10%)</td></tr>
+            <tr><td>Block Time</td><td>120 seconds</td></tr>
+            <tr><td>Initial Reward</td><td>50 RSDT</td></tr>
+            <tr><td>Halving Interval</td><td>2,102,400 blocks (4 years)</td></tr>
+            <tr><td>Tail Emission</td><td>0.5 RSDT/block</td></tr>
+            <tr><td>Genesis Date</td><td>2026-01-01T00:00:00Z</td></tr>
+            <tr><td>Decimal Places</td><td>12 (1 RSDT = 1,000,000,000,000 atomic units)</td></tr>
+        </table>
+
+        <h3>2.2 Privacy Features</h3>
+        <ul>
+            <li><strong>Ring Signatures:</strong> Inherited from Monero</li>
+            <li><strong>Stealth Addresses:</strong> One-time addresses for transactions</li>
+            <li><strong>ZK-Proofs:</strong> Optional zero-knowledge proofs for enhanced privacy</li>
+            <li><strong>Encrypted Mempool:</strong> Opportunistic encryption of transaction data</li>
+        </ul>
+
+        <h3>2.3 Economic Features</h3>
+        <ul>
+            <li><strong>Fee Burning:</strong> 50% of transaction fees burned</li>
+            <li><strong>Premine Vesting:</strong> Structured release schedule</li>
+            <li><strong>DAO Treasury:</strong> Community-controlled development fund</li>
+        </ul>
+
+        <h2>3. TOKENOMICS</h2>
+        
+        <h3>3.1 Supply Distribution</h3>
+        <p>The 200M RSDT supply is distributed as follows:</p>
+        
+        <h4>Premine Allocation (20M RSDT - 10%)</h4>
+        <table>
+            <tr><th>Wallet</th><th>Amount</th><th>Percentage</th></tr>
+            <tr><td>Liquidity Pool</td><td>4.5M RSDT</td><td>2.25%</td></tr>
+            <tr><td>Development Fund</td><td>3.75M RSDT</td><td>1.875%</td></tr>
+            <tr><td>Marketing Fund</td><td>3M RSDT</td><td>1.5%</td></tr>
+            <tr><td>Team Allocation</td><td>2.25M RSDT</td><td>1.125%</td></tr>
+            <tr><td>Treasury Fund</td><td>1.5M RSDT</td><td>0.75%</td></tr>
+            <tr><td>OTC Sales</td><td>2.75M RSDT</td><td>1.375%</td></tr>
+            <tr><td>Founder Private</td><td>2.25M RSDT</td><td>1.125%</td></tr>
+        </table>
+
+        <h4>Mining Supply (180M RSDT - 90%)</h4>
+        <ul>
+            <li>Distributed through Proof-of-Work mining</li>
+            <li>Initial reward: 50 RSDT per block</li>
+            <li>Halving every 4 years</li>
+            <li>Tail emission: 0.5 RSDT per block</li>
+        </ul>
+
+        <h3>3.2 Vesting Schedule</h3>
+        
+        <h4>Immediate Release (25% of Premine)</h4>
+        <div class="highlight">
+            <strong>5M RSDT</strong> available at launch<br>
+            Ensures liquidity and initial distribution
+        </div>
+
+        <h4>Locked Tokens (75% of Premine)</h4>
+        <div class="highlight">
+            <strong>15M RSDT</strong> locked with various schedules<br>
+            Prevents market manipulation<br>
+            Ensures long-term commitment
+        </div>
+
+        <h4>Specific Vesting Schedules:</h4>
+        <ul>
+            <li><strong>Liquidity:</strong> 50% T1 listing, 50% @ $10M cap</li>
+            <li><strong>Development:</strong> 24-month linear vesting</li>
+            <li><strong>Marketing:</strong> 12-month linear vesting</li>
+            <li><strong>Team:</strong> Custom vesting schedule</li>
+            <li><strong>Treasury:</strong> DAO control after 6 months</li>
+            <li><strong>OTC Sales:</strong> 18-month linear vesting</li>
+            <li><strong>Founder Private:</strong> 50% launch, 25% @ 12mo, 25% @ halving</li>
+        </ul>
+
+        <h2>4. GOVERNANCE</h2>
+        
+        <h3>4.1 Multi-Signature Control</h3>
+        <ul>
+            <li>7 founder wallets control premine releases</li>
+            <li>4/7 signatures required for vesting releases</li>
+            <li>Prevents single-point-of-failure</li>
+        </ul>
+
+        <h3>4.2 DAO Transition</h3>
+        <ul>
+            <li>Treasury fund transitions to DAO control after 6 months</li>
+            <li>Community voting on development priorities</li>
+            <li>Transparent fund allocation</li>
+        </ul>
+
+        <h2>5. PRIVACY PROTOCOL</h2>
+        
+        <h3>5.1 Enhanced Privacy Features</h3>
+        <ul>
+            <li><strong>ZK-Proofs:</strong> Optional zero-knowledge proofs</li>
+            <li><strong>Encrypted Mempool:</strong> Peer-to-peer transaction encryption</li>
+            <li><strong>Stealth Addresses:</strong> One-time addresses for each transaction</li>
+        </ul>
+
+        <h3>5.2 Privacy Levels</h3>
+        <ul>
+            <li><strong>Level 1:</strong> Standard Monero privacy (ring signatures)</li>
+            <li><strong>Level 2:</strong> ZK-proofs enabled (optional)</li>
+            <li><strong>Level 3:</strong> Encrypted mempool (opportunistic)</li>
+        </ul>
+
+        <h2>6. ROADMAP</h2>
+        
+        <h3>Phase 1: Core Development (Q1 2026)</h3>
+        <ul>
+            <li>Complete ZK-proof implementation</li>
+            <li>Implement encrypted mempool</li>
+            <li>Deploy testnet</li>
+        </ul>
+
+        <h3>Phase 2: Ecosystem (Q2 2026)</h3>
+        <ul>
+            <li>Launch mining pools</li>
+            <li>Deploy blockchain explorer</li>
+            <li>Release GUI applications</li>
+        </ul>
+
+        <h3>Phase 3: Mainnet (Q3 2026)</h3>
+        <ul>
+            <li>Launch mainnet</li>
+            <li>List on exchanges</li>
+            <li>Community governance activation</li>
+        </ul>
+
+        <h2>7. RISK FACTORS</h2>
+        
+        <h3>7.1 Technical Risks</h3>
+        <ul>
+            <li>ZK-proof implementation complexity</li>
+            <li>Encrypted mempool performance impact</li>
+            <li>Monero fork maintenance</li>
+        </ul>
+
+        <h3>7.2 Economic Risks</h3>
+        <ul>
+            <li>Premine market impact</li>
+            <li>Vesting schedule execution</li>
+            <li>Fee burning sustainability</li>
+        </ul>
+
+        <h3>7.3 Regulatory Risks</h3>
+        <ul>
+            <li>Privacy coin regulations</li>
+            <li>Exchange listing restrictions</li>
+            <li>Government intervention</li>
+        </ul>
+
+        <h2>8. CONCLUSION</h2>
+        <p>Resistance Blockchain represents a new paradigm in privacy-focused cryptocurrencies, combining the proven security of Monero with enhanced privacy features and transparent governance. Through careful tokenomics design and community-driven development, RSDT aims to become the standard for censorship-resistant digital currency.</p>
+
+        <div class="footer">
+            <p><strong>Genesis Message:</strong> "Censorship is control; privacy is resistance"</p>
+            <p><strong>Network ID:</strong> 0x1230F171610441611731008216A1A110</p>
+            <p><strong>Base58 Prefix:</strong> 18 (Mainnet), 53 (Testnet), 24 (Stagenet)</p>
+            <hr>
+            <p><em>This whitepaper is based on the actual implementation found in the Resistance Blockchain codebase as of September 2024.</em></p>
+        </div>
+    </div>
+</body>
+</html>
+

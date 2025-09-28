@@ -1,0 +1,26 @@
+# RESISTANCE BLOCKCHAIN - COMPLETE PREMINE ALLOCATION
+# Total Premine: 20M RSDT (10% of 200M total supply)
+# Generated: $(date)
+
+## PUBLIC WALLETS (6 Total):
+1. RSDT_Liquidity: 4.5M RSDT (2.25%)
+2. RSDT_Development: 3.75M RSDT (1.875%)  
+3. RSDT_Marketing: 3M RSDT (1.5%)
+4. RSDT_Team: 2.25M RSDT (1.125%)
+5. RSDT_Treasury: 1.5M RSDT (0.75%)
+6. RSDT_OTC_Sales: 2.75M RSDT (1.375%)
+
+## PRIVATE WALLET (1 Total):
+7. RSDT_Founder_Private: 2.25M RSDT (1.125%) ⭐ YOUR WALLET
+
+## VESTING SCHEDULES:
+- Standard Vesting (All Public Wallets): 25% at launch, 75% over specified period
+- Team Wallet Special: 50% at launch, 25% at 12 months, 25% at first halving  
+- Your Wallet: 50% already vested, 50% locked for 1 year vesting
+
+## CURRENT STATUS:
+✅ Genesis Block: 20M RSDT premine loaded successfully
+✅ Daemon: Running on testnet (port 28091)
+✅ RPC: Blockchain API working correctly
+✅ Block Height: 1 (genesis confirmed)
+🔄 Next: Create missing OTC_Sales wallet and test transactions

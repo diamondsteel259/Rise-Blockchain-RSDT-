@@ -1,0 +1,21 @@
+██████╗ ███████╗██████╗ ████████╗
+██╔══██╗██╔════╝██╔══██╗╚══██╔══╝
+██████╔╝███████╗██║  ██║   ██║   
+██╔══██╗╚════██║██║  ██║   ██║   
+██║  ██║███████║██████╔╝   ██║   
+╚═╝  ╚═╝╚══════╝╚═════╝    ╚═╝   
+
+    RESISTANCE BLOCKCHAIN
+    Privacy • Freedom • Resistance
+
+    Genesis Message:
+    "Censorship is control; privacy is resistance"
+
+    Network ID: 0x1230F171610441611731008216A1A110
+    Ticker: RSDT
+    Total Supply: 200M RSDT
+    Premine: 20M RSDT (10%)
+    Block Time: 120 seconds
+    Halving: Every 4 years
+    Tail Emission: 0.5 RSDT/block
+

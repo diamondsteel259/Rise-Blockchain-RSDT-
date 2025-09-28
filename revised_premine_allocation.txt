@@ -1,0 +1,50 @@
+RESISTANCE BLOCKCHAIN - REVISED PREMINE ALLOCATION
+==================================================
+
+TOTAL SUPPLY: 200M RSDT
+PREMINE: 20M RSDT (10% of total supply)
+MINING SUPPLY: 180M RSDT (90% of total supply)
+
+PREMINE WALLET ALLOCATION:
+==========================
+
+RSDT_Liquidity: 4.5M RSDT (2.25%)
+- 25% (1.125M RSDT) at launch
+- 50% (2.25M RSDT) at T1 listing
+- 25% (1.125M RSDT) at $10M market cap
+
+RSDT_Development: 3.75M RSDT (1.875%)
+- 25% (937.5K RSDT) at launch
+- 75% (2.8125M RSDT) over 24 months (linear)
+
+RSDT_Marketing: 3M RSDT (1.5%)
+- 25% (750K RSDT) at launch
+- 75% (2.25M RSDT) over 12 months (linear)
+
+RSDT_Team: 2.25M RSDT (1.125%)
+- 50% (1.125M RSDT) at launch
+- 25% (562.5K RSDT) at 12 months
+- 25% (562.5K RSDT) at first halving
+
+RSDT_Treasury: 1.5M RSDT (0.75%)
+- 25% (375K RSDT) at launch
+- 75% (1.125M RSDT) DAO after 6 months
+
+RSDT_OTC_Sales: 2.75M RSDT (1.375%)
+- 25% (687.5K RSDT) at launch
+- 75% (2.0625M RSDT) over 18 months (linear)
+
+RSDT_Founder_Private: 2.25M RSDT (1.125%)
+- 50% (1.125M RSDT) at launch
+- 25% (562.5K RSDT) at 12 months
+- 25% (562.5K RSDT) at first halving
+
+TOTALS:
+- Total Premine: 20M RSDT (10%)
+- Immediately Available: 5M RSDT (25% of premine)
+- Locked: 15M RSDT (75% of premine)
+
+ATOMIC UNITS CONVERSION:
+- 1 RSDT = 1,000,000,000,000 atomic units (12 decimal places)
+- Total Supply: 200,000,000,000,000,000 atomic units
+- Premine: 20,000,000,000,000,000 atomic units

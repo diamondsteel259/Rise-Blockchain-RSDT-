@@ -1,0 +1,39 @@
+=== RESISTANCE BLOCKCHAIN PREMINE WALLET CREATION ===
+Total Premine: 20M RSDT (10% of 200M total supply)
+Generated: Thu Sep 25 12:16:13 PM CAT 2025
+
+=== Creating RSDT_Liquidity ===
+Generated 6 premine wallets
+Total premine: 17250000 RSDT
+Files created: premine_wallets.txt, genesis_outputs.txt
+
+=== Creating RSDT_Development ===
+Generated 6 premine wallets
+Total premine: 17250000 RSDT
+Files created: premine_wallets.txt, genesis_outputs.txt
+
+=== Creating RSDT_Marketing ===
+Generated 6 premine wallets
+Total premine: 17250000 RSDT
+Files created: premine_wallets.txt, genesis_outputs.txt
+
+=== Creating RSDT_Team ===
+Generated 6 premine wallets
+Total premine: 17250000 RSDT
+Files created: premine_wallets.txt, genesis_outputs.txt
+
+=== Creating RSDT_Treasury ===
+Generated 6 premine wallets
+Total premine: 17250000 RSDT
+Files created: premine_wallets.txt, genesis_outputs.txt
+
+=== Creating RSDT_OTC_Sales ===
+Generated 6 premine wallets
+Total premine: 17250000 RSDT
+Files created: premine_wallets.txt, genesis_outputs.txt
+
+=== Creating RSDT_Founder_Private ===
+Generated 6 premine wallets
+Total premine: 17250000 RSDT
+Files created: premine_wallets.txt, genesis_outputs.txt
+

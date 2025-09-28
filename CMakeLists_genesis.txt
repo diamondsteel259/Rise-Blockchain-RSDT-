@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.5)
+project(genesis_builder)
+
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Include directories
+include_directories(src)
+include_directories(contrib/epee/include)
+include_directories(external/boost)
+include_directories(external/boost/archive)
+include_directories(build)
+
+# Add executable
+add_executable(genesis_builder genesis_builder.cpp)
+
+# Link libraries
+target_link_libraries(genesis_builder cncrypto)
